@@ -1,4 +1,4 @@
-My Awesome Book
+ExcelChurch Computer Operator's Manual
 =======
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+This book serves as a manual for computer operators at ExcelChurch. It explains our live technology setup for running services including hardware, software, and the integration and operation thereof.
