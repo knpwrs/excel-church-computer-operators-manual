@@ -14,4 +14,4 @@ We use a Mid-2012 MacBook Pro Retina as our primary (and currently only) compute
 
 ## Settings
 
-Display, midi studio.
+Display, midi studio, do not disturb.
