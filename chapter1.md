@@ -1,3 +1,23 @@
-# First Chapter
+# Reaper
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+We use Reaper for recording services, playing backing tracks during worship, and as a host for Superior Drummer (used for drum sounds).
+
+## Basic Setup
+
+Audio device, midi device, sample rate.
+
+## Superior Drummer
+
+Mapping midi notes.
+
+## Playtime for Reaper
+
+Usage.
+
+## Midi Control
+
+Setup.
+
+## Recording
+
+Usage.
