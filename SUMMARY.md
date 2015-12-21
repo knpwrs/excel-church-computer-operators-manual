@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [Hardware Setup](hardware.md)
-* Reaper
+* [Reaper](reaper.md)
 
