@@ -34,7 +34,7 @@ A loopback MIDI device needs to be set up to allow communication between ProPres
 
 The computer should be placed in "Do Not Disturb" mode. This mode can be set by opening the notification center, scrolling up, and settings "Do Not Disturb" to `on`.
 
-![Do Not Disturb](dnd.png)
+![Do Not Disturb](images/dnd.png)
 
 ## Setup
 
@@ -59,4 +59,4 @@ We additionally connect the computer's primary audio output via headphone jack t
 
 ### Diagram 
 
-![Hardware Setup Diagram](Hardware Setup.png)
+![Hardware Setup Diagram](images/Hardware Setup.png)
