@@ -11,10 +11,30 @@ We use the following hardware for each service:
 * MIDI Snake (Kenton LNDR)
 * MIDI Interface (Roland UM-ONE mk2)
 * PC-DI
+* Projector (Venue)
+* TV (Stage Display)
 
 ## Computer
 
 We use a Mid-2012 MacBook Pro Retina as our primary (and currently only) computer. This computer has enough connectivity built in to connect to up to three external displays and supports the Midi features of ProPresenter. We also use this computer for recording audio and plan to use it in the future for controlling lights and streaming services to the Internet.
+
+### Settings
+
+Display, midi studio, do not disturb.
+
+#### Display
+
+The display settings should be that both the projector and TV are not mirrored and both running at a resolution of 1920x1080 (1080p).
+
+#### MIDI Studio
+
+A loopback MIDI device needs to be set up to allow communication between ProPresenter and REAPER.
+
+#### Do Not Disturb
+
+The computer should be placed in "Do Not Disturb" mode. This mode can be set by opening the notification center, scrolling up, and settings "Do Not Disturb" to `on`.
+
+![Do Not Disturb](dnd.png)
 
 ## Setup
 
@@ -40,8 +60,3 @@ We additionally connect the computer's primary audio output via headphone jack t
 ### Diagram 
 
 ![Hardware Setup Diagram](Hardware Setup.png)
-
-
-## Settings
-
-Display, midi studio, do not disturb.
