@@ -20,15 +20,21 @@ We use a Mid-2012 MacBook Pro Retina as our primary (and currently only) compute
 
 ### Settings
 
-Display, midi studio, do not disturb.
-
 #### Display
 
 The display settings should be that both the projector and TV are not mirrored and both running at a resolution of 1920x1080 (1080p).
 
+```
+image placeholder
+```
+
 #### MIDI Studio
 
 A loopback MIDI device needs to be set up to allow communication between ProPresenter and REAPER.
+
+```
+image placeholder
+```
 
 #### Do Not Disturb
 
@@ -57,6 +63,6 @@ The Allen & Heath Qu-32 mixer is connected to the computer via a USB cable. We u
 
 We additionally connect the computer's primary audio output via headphone jack to a PCDI box which then connects via XLR to the mixer.
 
-### Diagram 
+### Diagram
 
 ![Hardware Setup Diagram](images/Hardware Setup.png)
