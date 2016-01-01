@@ -4,15 +4,16 @@
 
 We use the following hardware for each service:
 
-* [Computer](http://www.apple.com/macbook-pro/) (Mid-2012 MacBook Pro Retina)
-* [Mixer](http://www.allen-heath.com/ahproducts/qu-32/) (Allen & Heath Qu-32)
-* [MIDI Controller](http://loopcommunity.com/looptimus) (Looptimus)
-* [Drum Module](http://www.roland.com/products/td-12/) (Roland TD-12)
-* [MIDI Snake](http://www.kentonuk.com/products/items/utilities/lndr.shtml) (Kenton LNDR)
-* [MIDI Interface](http://www.rolandus.com/products/um-one_mk2/) (Roland UM-ONE mk2)
+* Computer (Mid-2012 MacBook Pro Retina)
+* Mixer (Allen & Heath Qu-32)
+* Digital Snake (Allen & Heath AR2412)
+* MIDI Controller (Looptimus)
+* Drum Module (Roland TD-12)
+* MIDI Snake (Kenton LNDR)
+* MIDI Interface (Roland UM-ONE mk2)
 * [PCDI](http://whirlwindusa.com/catalog/black-boxes-effects-and-dis/direct-boxes/pcdi)
 * Projector (Venue)
-* TV (Stage Display)
+* TV (ProPresenter Stage Display)
 
 ## Computer
 
