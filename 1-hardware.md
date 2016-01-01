@@ -22,7 +22,7 @@ We use a Mid-2012 MacBook Pro Retina as our primary (and currently only) compute
 
 #### Display
 
-The display settings should be that both the projector and TV are not mirrored and both running at a resolution of 1920x1080 (1080p).
+The display settings should be that both the projector and TV are *not* mirrored and both running at a resolution of 1920x1080 (1080p).
 
 ```
 image placeholder
