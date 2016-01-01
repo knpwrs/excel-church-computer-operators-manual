@@ -64,7 +64,9 @@ Usage.
 
 ## Midi Control
 
-Setup.
+Reaper can be controlled via MIDI. Currently we map two actions in Reaper to buttons on the Looptimus: `stop` and `record`. To set this up, go to the `Actions` menu and click `Show actions list...`. Look for the `Transport: Stop` action, select it, and click the `Add...` button to add a MIDI mapping. Press the `stop` button on the Looptimus and save all settings. Repeat for the `Transport: Record` and button `1` on the Looptimus.
+
+![Reaper Actions List](images/reaper/actions.png)
 
 ## Recording
 
