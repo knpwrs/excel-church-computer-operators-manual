@@ -8,17 +8,13 @@ We use Reaper for recording services, playing backing tracks during worship, and
 
 The Audio Device should be set to the Allen & Heath Qu-32 and should be set to request a block size of 128.
 
-```
-image placeholder
-```
+![Audio Device](./images/reaper/audio-device.png)
 
 ### Midi Devices
 
 Enable input from the Roland UM-ONE mk2 and output to the IAC Loopback device.
 
-```
-image placeholder
-```
+![Midi Devices](./images/reaper/midi-devices.png)
 
 ### Media Settings
 
