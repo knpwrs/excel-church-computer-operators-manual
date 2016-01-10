@@ -25,17 +25,17 @@ We use a Mid-2012 MacBook Pro Retina as our primary (and currently only) compute
 
 The display settings should be that both the projector and TV are *not* mirrored and both running at a resolution of 1920x1080 (1080p).
 
-```
-image placeholder
-```
+![Displays](./images/hardware/display-overview.png)
+
+![Projector](./images/hardware/display-projector.png)
+
+![TV](./images/hardware/display-tv.png)
 
 #### MIDI Studio
 
-A loopback MIDI device needs to be set up to allow communication between ProPresenter and REAPER.
+A loopback MIDI device needs to be set up to allow communication between ProPresenter and REAPER. You can set this up by opening `/Applications/Utilities/Audio MIDI Setup.app` and clicking `Window > Show MIDI Studio`. Now double click `IAC Driver` and check `Device is online` to activate it. Add a port called `Loopback` with one input and one output and then close the open windows.
 
-```
-image placeholder
-```
+![MIDI](./images/hardware/midi.png)
 
 #### Do Not Disturb
 
@@ -66,4 +66,4 @@ We additionally connect the computer's primary audio output via headphone jack t
 
 ### Diagram
 
-![Hardware Setup Diagram](images/Hardware Setup.png)
+![Hardware Setup Diagram](images/hardware/setup-diagram.png)
