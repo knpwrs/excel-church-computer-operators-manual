@@ -8,6 +8,7 @@ Display setup, midi setup.
 | -------- | ------------------------------ |
 | `cmd+1`  | Toggle Output                  |
 | `cmd+2`  | Toggle Stage Display           |
+| `cmd+3`  | Toggle Stage Display Preview   |
 | `F1`     | Clear Everything (Blackout)    |
 | `F6`     | Clear Everything (Go to Logo)  |
 | `F2`     | Clear Slide (Leave Background) |
