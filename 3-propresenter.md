@@ -26,3 +26,10 @@ The output should be configured to go to the projector and the stage display sho
 ## Midi Setup
 
 Leave all midi notes the way they are for portability. Dealing with the midi notes will be covered in [Recording Slide Automation](recording-slide-automation.md).
+
+## Weekly Setup Checklist
+
+* [ ] Songs
+* [ ] Announcements Video
+* [ ] Bumper Video
+* [ ] Message Slides
