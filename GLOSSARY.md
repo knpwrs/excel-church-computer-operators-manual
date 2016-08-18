@@ -10,6 +10,10 @@ A 32-channel mixer made by Allen & Heath. http://www.allen-heath.com/ahproducts/
 
 A type of cable typically used for networking. Also used by other equipment for various purposes, such as the Allen & Heath Qu-32 or Allen & Heath AR2412 for sending audio to and from the stage or the Kenton LNDR for sending MIDI signals to and from the stage. https://en.wikipedia.org/wiki/Ethernet
 
+# `ffmpeg`
+
+A very fast video and audio converter that can also grab from a live audio/video source. It can also convert between arbitrary sample rates and resize video on the fly with a high quality polyphase filter.
+
 # HDMI
 
 High Definition Multimedia Interface. Used for connecting multimedia devices:
