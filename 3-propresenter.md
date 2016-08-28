@@ -2,7 +2,13 @@
 
 Display setup, midi setup.
 
-## Useful Keyboard Shortcuts
+## Operation
+
+### Only Click Once
+
+If it appears that something is taking a while to load after you click it, do not click again! Only one click is required and clicking multiple times will cause stuttering.
+
+### Useful Keyboard Shortcuts
 
 | Shortcut | Action                         |
 | -------- | ------------------------------ |
@@ -32,7 +38,7 @@ Leave all midi notes the way they are for portability. Dealing with the midi not
 As a portable church we hold service in venues where we do not control the network. As a result, we are not typically able to remote-control ProPresenter over WiFi. That said, given a Linux server hosted somewhere on the Internet, we can tunnel the ProPresenter port to a public IP address. For example:
 
 ```sh
-ssh -i <public-key> -nNT -R *:<remote-port>:localhost:<local-port> <remote-user>@<remote-ip>
+ssh -i <private-key> -nNT -R *:<remote-port>:localhost:<local-port> <remote-user>@<remote-ip>
 ```
 
 From there, you can connect using the ProPresenter iOS or Android app at `<remote-ip>` on `<remote-port>`.
