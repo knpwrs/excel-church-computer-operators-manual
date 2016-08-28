@@ -38,10 +38,18 @@ Leave all midi notes the way they are for portability. Dealing with the midi not
 As a portable church we hold service in venues where we do not control the network. As a result, we are not typically able to remote-control ProPresenter over WiFi. That said, given a Linux server hosted somewhere on the Internet, we can tunnel the ProPresenter port to a public IP address. For example:
 
 ```sh
-ssh -i <private-key> -nNT -R *:<remote-port>:localhost:<local-port> <remote-user>@<remote-ip>
+ssh -i $PRIVATE_KEY -nNT -R *:$REMOTE_PORT:localhost:$LOCAL_PORT $REMOTE_USER@$REMOTE_IP
 ```
 
-From there, you can connect using the ProPresenter iOS or Android app at `<remote-ip>` on `<remote-port>`.
+For a full explanation of that command, click [here][explain-ssh].
+
+From there, you can connect using the ProPresenter iOS or Android app at `$REMOTE_IP` on `$REMOTE_PORT`.
+
+This command, pre-configured and ready to go, is available on the ProPresenter computer's desktop as an icon:
+
+![tunnel.command](./images/tunnel.command.png)
+
+Simply double click that icon and a terminal window will launch and run the command.
 
 ## Weekly Setup Checklist
 
@@ -49,3 +57,5 @@ From there, you can connect using the ProPresenter iOS or Android app at `<remot
 * [ ] Announcements Video
 * [ ] Bumper Video
 * [ ] Message Slides
+
+[explain-ssh]: http://explainshell.com/explain?cmd=ssh+-i+%24PRIVATE_KEY+-nNT+-R+*%3A%24REMOTE_PORT%3Alocalhost%3A%24LOCAL_PORT+%24REMOTE_USER%40%24REMOTE_IP "ssh -i $PRIVATE_KEY -nNT -R *:$REMOTE_PORT:localhost:$LOCAL_PORT $REMOTE_USER@$REMOTE_IP"
