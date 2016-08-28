@@ -27,6 +27,16 @@ The output should be configured to go to the projector and the stage display sho
 
 Leave all midi notes the way they are for portability. Dealing with the midi notes will be covered in [Recording Slide Automation](recording-slide-automation.md).
 
+## Remote Control
+
+As a portable church we hold service in venues where we do not control the network. As a result, we are not typically able to remote-control ProPresenter over WiFi. That said, given a Linux server hosted somewhere on the Internet, we can tunnel the ProPresenter port to a public IP address. For example:
+
+```sh
+ssh -i <public-key> -nNT -R *:<remote-port>:localhost:<local-port> <remote-user>@<remote-ip>
+```
+
+From there, you can connect using the ProPresenter iOS or Android app at `<remote-ip>` on `<remote-port>`.
+
 ## Weekly Setup Checklist
 
 * [ ] Songs
