@@ -38,7 +38,7 @@ Leave all midi notes the way they are for portability. Dealing with the midi not
 As a portable church we hold service in venues where we do not control the network. As a result, we are not typically able to remote-control ProPresenter over WiFi. That said, given a Linux server hosted somewhere on the Internet, we can tunnel the ProPresenter port to a public IP address. For example:
 
 ```sh
-ssh -i $PRIVATE_KEY -nNT -R *:$REMOTE_PORT:localhost:$LOCAL_PORT $REMOTE_USER@$REMOTE_IP
+ssh -i $PRIVATE_KEY -nNT -R $REMOTE_PORT:localhost:$LOCAL_PORT $REMOTE_USER@$REMOTE_IP
 ```
 
 For a full explanation of that command, click [here][explain-ssh].
@@ -58,4 +58,4 @@ Simply double click that icon and a terminal window will launch and run the comm
 * [ ] Bumper Video
 * [ ] Message Slides
 
-[explain-ssh]: http://explainshell.com/explain?cmd=ssh+-i+%24PRIVATE_KEY+-nNT+-R+*%3A%24REMOTE_PORT%3Alocalhost%3A%24LOCAL_PORT+%24REMOTE_USER%40%24REMOTE_IP "ssh -i $PRIVATE_KEY -nNT -R *:$REMOTE_PORT:localhost:$LOCAL_PORT $REMOTE_USER@$REMOTE_IP"
+[explain-ssh]: http://explainshell.com/explain?cmd=ssh+-i+%24PRIVATE_KEY+-nNT+-R+%24REMOTE_PORT%3Alocalhost%3A%24LOCAL_PORT+%24REMOTE_USER%40%24REMOTE_IP "ssh -i $PRIVATE_KEY -nNT -R *:$REMOTE_PORT:localhost:$LOCAL_PORT $REMOTE_USER@$REMOTE_IP"
