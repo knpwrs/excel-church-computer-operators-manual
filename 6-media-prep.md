@@ -24,3 +24,44 @@ Alternatively, use the following `ffmpeg` command to pillar-box a video for our 
 ```
 ffmpeg -i input.mp4 -filter:v "scale=1156:650,pad=1920:1080:382" output.mp4
 ```
+
+## Slides
+
+We have two targets for slides. One is the auditorium projection, set up for
+1920x650 (shorter than standard 1080p). The other target is the live stream,
+which is full 1080p. To accomodate for these two targets, slides should be
+designed in Keynote in full 1080p resolution with 215px buffers on the top and
+bottom. The middle 650px is a safe area for text and important picture details.
+See the following example slide (red buffer zones for illustrative purposes
+only, they are not required in actual slide designs):
+
+![Creation of Adam Slide](./images/coa.jpg)
+
+With slides set up as such we will prepare two sets of images. The first will
+be the full slide graphics for the live stream. The other will be the middle
+section cropped out for projection in the auditorium.
+
+Given a Keynote file set up properly as such, the first step is to export the
+slides to images. Open the Keynote file and go to `File > Export To... >
+Images`. Choose to export all slides with an image for each stage of builds in
+`PNG` format. We do not want to use `JPEG` for slide graphics. Choose any
+directory for output. The images output by this step are the full images which
+will be used for the live stream.
+
+Now we have to generate the cropped images for projection in the auditorum. The
+easiest way to do this is to use [ImageMagick]. Open a terminal in the
+directory where the slide images are located and run the following commands:
+
+```
+mkdir -p padded
+magick '*.png[1920x650+0+215]' -gravity north -background black -extent 1920x1080 'padded/%03d.png'
+```
+
+The first command will create a directory called `padded` to export the
+cropped/padded images to. The second command will crop out the middle section
+of the images (1920x650 starting at `(0,215)`) and then grow the images back
+out to 1080p with the cropped contents pushed to the top of the frame leaving
+the bottom 430px solid black. The images will be output to `padded/000.png`,
+`padded/001.png`, `padded/002.png`, etc.
+
+[ImageMagick]: https://www.imagemagick.org/script/index.php "ImageMagick"
