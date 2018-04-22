@@ -5,5 +5,4 @@
 * [Software Setup](2-software.md)
 * [Reaper](3-reaper.md)
 * [ProPresenter](4-propresenter.md)
-* [Recording Slide Automation](5-recording-slide-automation.md)
-* [Media Prep](6-media-prep.md)
+* [Media Prep](5-media-prep.md)
