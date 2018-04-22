@@ -1,29 +1,22 @@
 # Hardware Setup
 
-## Summary
+## ProPresenter
 
-We use the following hardware for each service:
+We use two laptops for ProPresenter: a master computer running ProPresenter's
+Master Control Module and a slave computer which is connected to the master
+computer over the network. The master computer contains the slides and video
+for projection in the auditorium, and the slave computer contains the slides
+and video for the live stream. We are set up this way in order to accomodate
+for our limited projection setup: we project at a resolution of 1920x650 and
+stream at a resolution of 1920x1080.
 
-* Computer (Mid-2012 MacBook Pro Retina)
-* Mixer (Allen & Heath Qu-32)
-* Digital Snake (Allen & Heath AR2412)
-* MIDI Controller (Looptimus)
-* Drum Module (Roland TD-12)
-* MIDI Snake (Kenton LNDR)
-* MIDI Interface (Roland UM-ONE mk2)
-* [PCDI](http://whirlwindusa.com/catalog/black-boxes-effects-and-dis/direct-boxes/pcdi)
-* Projector (Venue)
-* TV (ProPresenter Stage Display)
+### Display
 
-## Computer
-
-We use a Mid-2012 MacBook Pro Retina as our primary (and currently only) computer. This computer has enough connectivity built in to connect to up to three external displays and supports the Midi features of ProPresenter. We also use this computer for recording audio and plan to use it in the future for controlling lights and streaming services to the Internet.
-
-### Settings
-
-#### Display
-
-The display settings should be that both the projector and TV are *not* mirrored and both running at a resolution of 1920x1080 (1080p).
+The display settings on the master ProPresenter computer should be that both
+the projector and TV are *not* mirrored and both running at a resolution of
+1920x1080 (1080p) (while the project is set to 1920x1080, the bottom 1920x430
+section is solid black which makes the effective projection resolution
+1920x650).
 
 ![Displays](./images/hardware/display-overview.png)
 
@@ -31,39 +24,18 @@ The display settings should be that both the projector and TV are *not* mirrored
 
 ![TV](./images/hardware/display-tv.png)
 
-#### MIDI Studio
+## Streaming and Video Switching
 
-A loopback MIDI device needs to be set up to allow communication between ProPresenter and REAPER. You can set this up by opening `/Applications/Utilities/Audio MIDI Setup.app` and clicking `Window > Show MIDI Studio`. Now double click `IAC Driver` and check `Device is online` to activate it. Add a port called `Loopback` with one input and one output and then close the open windows.
+We use a hardware video switcher which outputs to a dedicated hardware streamer
+which stream to Vimeo which in turn streams to Facebook and YouTube. The slave
+ProPresenter computer feeds slides and video specially designed for the live
+stream to the video switcher.
 
-![MIDI](./images/hardware/midi.png)
+## LightKey
 
-#### Do Not Disturb
+We use LightKey on a dedicated computer to run lights over Art-Net. We have an
+Art-Net DMX interface which runs on the network.
 
-The computer should be placed in "Do Not Disturb" mode. This mode can be set by opening the notification center, scrolling up, and settings "Do Not Disturb" to `on`.
-
-![Do Not Disturb](images/dnd.png)
-
-## Setup
-
-### Presentation / Projection
-
-We connect the computer to two external displays:
-
-1. HDMI to Projector
-1. Mini DisplayPort to HDMI to TV
-
-### Control / Drums
-
-On stage we use a MIDI controller to control the playback of backing tracks, click / guide tracks, and to control the projection of lyrics. There is also a drum module on stage which produces its own MIDI signal.
-
-The MIDI controller is connected via a MIDI cable to the drum module. The drum module is connected via a MIDI cable to the master end of the Kenton LNDR MIDI snake. At the slave end of the snake we use a Roland UM-ONE mk2 to feed MIDI into the computer and send MIDI from the computer.
-
-### Audio / Recording
-
-The Allen & Heath Qu-32 mixer is connected to the computer via a USB cable. We use this connection to send audio from the computer (drum sounds, backing tracks, and guide tracks) and to record all audio from the mixer.
-
-We additionally connect the computer's primary audio output via headphone jack to a PCDI box which then connects via XLR to the mixer.
-
-### Diagram
+## Diagram
 
 ![Hardware Setup Diagram](images/hardware/setup-diagram.png)
