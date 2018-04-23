@@ -1,12 +1,14 @@
 # Reaper
 
-We use Reaper for recording services, playing backing tracks during worship, and as a host for Superior Drummer (used for drum sounds).
+We use Reaper for playing backing tracks during worship and as a host for
+Superior Drummer (used for drum sounds).
 
 ## Settings
 
 ### Audio Device
 
-The Audio Device should be set to the Allen & Heath Qu-32 and should be set to request a block size of 128.
+The Audio Device should be set to the Allen & Heath Qu-32 and should be set to
+request a block size of 128.
 
 ![Audio Device](./images/reaper/audio-device.png)
 
@@ -35,7 +37,8 @@ The track for the drums in Reaper should be set up to:
 image placeholder: track setup
 ```
 
-We have presets with all Midi notes pre-mapped and instruments set up. Our current preset is called `Excel20151220`:
+We have presets with all Midi notes pre-mapped and instruments set up. Our
+current preset is called `Excel20151220`:
 
 ![Superior Drummer Load Preset](images/reaper/superior-drummer-load-preset.png)
 
@@ -45,7 +48,8 @@ When properly set up, Superior Drummer should look as such:
 
 ### Remapping
 
-Remapping a note from the drum kit to play a certain instrument can be done through the following process:
+Remapping a note from the drum kit to play a certain instrument can be done
+through the following process:
 
 1. Right click the instrument to map a MIDI note to.
 1. Check the `learn` box.
@@ -56,14 +60,4 @@ Remapping a note from the drum kit to play a certain instrument can be done thro
 
 ## Playtime for Reaper
 
-Usage.
-
-## Midi Control
-
-Reaper can be controlled via MIDI. Currently we map two actions in Reaper to buttons on the Looptimus: `stop` and `record`. To set this up, go to the `Actions` menu and click `Show actions list...`. Look for the `Transport: Stop` action, select it, and click the `Add...` button to add a MIDI mapping. Press the `stop` button on the Looptimus and save all settings. Repeat for the `Transport: Record` and button `1` on the Looptimus.
-
-![Reaper Actions List](images/reaper/actions.png)
-
-## Recording
-
-Usage.
+Coming soon.

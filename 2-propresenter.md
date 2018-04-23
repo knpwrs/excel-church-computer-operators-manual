@@ -1,6 +1,76 @@
-# Media Prep
+# ProPresenter
 
-## Videos
+We use ProPresenter for our slides as well as audio/visual cues during service.
+
+## Operation
+
+### Only Click Once
+
+If it appears that something is taking a while to load after you click it, do
+not click again! Only one click is required and clicking multiple times will
+cause stuttering.
+
+### Useful Keyboard Shortcuts
+
+| Shortcut | Action                         |
+| -------- | ------------------------------ |
+| `cmd+1`  | Toggle Output                  |
+| `cmd+2`  | Toggle Stage Display           |
+| `cmd+3`  | Toggle Stage Display Preview   |
+| `F1`     | Clear Everything (Blackout)    |
+| `F6`     | Clear Everything (Go to Logo)  |
+| `F2`     | Clear Slide (Leave Background) |
+| `F3`     | Clear Background               |
+| `F4`     | Clear Props                    |
+| `F5`     | Clear Audio                    |
+
+## Setup
+
+### Master Instance
+
+The master instance of ProPresenter is what powers the main auditorium
+projection. We project at full 1080p but the bottom 1920x430 section is just
+solid black. Our effective projection is 1920x650. This setup allows us to use
+the area of the stage that is below the projection screen. There is also a TV
+on top of the booth which acts as a stage display (clocks, timers, videos,
+etc).
+
+The display settings on the master ProPresenter computer should be that both
+the projector and TV are *not* mirrored and both running at a resolution of
+1920x1080 (1080p).
+
+![Displays](./images/hardware/display-overview.png)
+
+![Projector](./images/hardware/display-projector.png)
+
+![TV](./images/hardware/display-tv.png)
+
+The output should be configured to go to the projector and the stage display
+should be configured to go to the TV.
+
+![Display Settings](./images/propresenter/display-settings.png)
+
+```
+Placeholder: Network settings
+```
+
+```
+Placeholder: Audio Hijack
+```
+
+### Slave Instance
+
+```
+Placeholder: Network settings
+```
+
+```
+Placeholder: Audio Hijack
+```
+
+### Media Prep
+
+#### Videos
 
 The following `ffmpeg` command will prepare videos for our projection setup:
 
@@ -25,15 +95,16 @@ Breaking it down:
 1. `output.mp4` - Tells `ffmpeg` to write the resulting video file to
    `output.mp4`.
 
-### Pillar Box
+##### Pillar Box
 
-Alternatively, use the following `ffmpeg` command to pillar-box a video for our projection setup:
+Alternatively, use the following `ffmpeg` command to pillar-box a video for our
+projection setup:
 
 ```
 ffmpeg -i input.mp4 -filter:v "scale=1156:650,pad=1920:1080:382" output.mp4
 ```
 
-## Slides
+#### Slides
 
 We have two targets for slides. One is the auditorium projection, set up for
 1920x650 (shorter than standard 1080p). The other target is the live stream,

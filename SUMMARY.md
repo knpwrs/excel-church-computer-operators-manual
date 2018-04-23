@@ -1,8 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-* [Hardware Setup](1-hardware.md)
-* [Software Setup](2-software.md)
-* [Reaper](3-reaper.md)
-* [ProPresenter](4-propresenter.md)
-* [Media Prep](5-media-prep.md)
+* [Overview](1-overview.md)
+* [ProPresenter](2-propresenter.md)
+* [Live Streaming](3-live-streaming.md)
+* [Reaper](4-reaper.md)
+* [Lightkey](5-lightKey.md)
